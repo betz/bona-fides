@@ -103,13 +103,21 @@ How to?
 - On a fresh mac install, install git, See at following link to download the DMG. http://code.google.com/p/git-osx-installer/downloads/list
 - Open terminal.app
 - Clone the Github repo with following command: (just copy and paste in terminal and hit enter)
- git clone https://betz@github.com/betz/bona-fides.git
+ 
+  git clone https://betz@github.com/betz/bona-fides.git
+
 - When done, enter the folder you just created with cloning the repo. Do this with following command:
- cd bona-fides
+ 
+  cd bona-fides
+
 - Make the setup.sh file executable with next command:
- chmod +x setup.sh
+
+  chmod +x setup.sh
+
 - Start the setup:
- ./setup.sh
+
+  ./setup.sh
+
 
 When asked for your password, enter your mac user password and hit enter.
 It is normal that you dont see your cursor moving when typing a password.
