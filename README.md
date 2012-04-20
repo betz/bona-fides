@@ -121,10 +121,10 @@ How to?
 
 When asked for your password, enter your mac user password and hit enter.
 It is normal that you dont see your cursor moving when typing a password.
-Follow instructions as you see them (it will ask to hit enter few times)
+Follow instructions as you see them. (it will ask to hit enter few times)
 
 Credits
 =======
 For the PHP part, i am using the version of http://php-osx.liip.ch
-Bona Fides is maintained by Tom Behets (betz) behets@gmail.com
+Bona Fides is maintained by Tom Behets (betz)
 
