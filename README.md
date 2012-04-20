@@ -117,6 +117,10 @@ How to?
 - Start the setup:
 
   ./setup.sh
+  
+- You can safely remove the bona-fides folder in your home folder with finder.
+
+That's it!
 
 
 When asked for your password, enter your mac user password and hit enter.
