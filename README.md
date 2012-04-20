@@ -12,7 +12,7 @@ What does Bona Fides install?
 - MYSQL 5.5.23
 - Drush (Latest)
 - Pear (Latest)
-- CGG 10.7-v2 (without using XCode)
+- GCC 10.7-v2 (without using XCode)
 - Git 1.7.9.4
 - Homebrew (Latest)
 
