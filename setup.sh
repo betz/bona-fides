@@ -17,10 +17,9 @@ command -v gcc >/dev/null 2>&1 || {
 
 # Download and install git, if it doesnt exist already
 command -v git >/dev/null 2>&1 || {
-  echo "Downloading git for Mac."
+  echo "Installing Git."
   curl -O http://git-osx-installer.googlecode.com/files/git-1.7.9.4-intel-universal-snow-leopard.dmg
   hdiutil attach git*.dmg
-  echo "Installing git for Mac."
   sudo installer -pkg '/Volumes/Git 1.7.9.4 Snow Leopard Intel Universal/git-1.7.9.4-intel-universal-snow-leopard.pkg' -target /
   hdiutil detach /Volumes/Git*
 }
@@ -59,18 +58,23 @@ sudo ln -s /usr/local/php5/bin/php /usr/bin/php
 
 
 # Install Pear
-echo "Installing Pear"
-curl http://pear.php.net/go-pear.phar > go-pear.phar
-sudo php -d detect_unicode=0 go-pear.phar
+command -v pear >/dev/null 2>&1 || {
+  echo "Installing Pear"
+  curl http://pear.php.net/go-pear.phar > go-pear.phar
+  sudo php -d detect_unicode=0 go-pear.phar
+  sudo mv /Users/$USER/pear/bin/pear /usr/local/bin/
+}
 
 
 # Install MySQL5
-echo "Installing MySQL5"
-brew install mysql
-mysql_install_db --verbose --user=$USER --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
-mkdir -p ˜/Library/LaunchAgents
-cp /usr/local/Cellar/mysql/*/homebrew.mxcl.mysql.plist ˜/Library/LaunchAgents
-launchctl load -w ˜/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+command -v pear >/dev/null 2>&1 || {
+  echo "Installing MySQL5"
+  curl -O http://mysql.easynet.be/Downloads/MySQL-5.5/mysql-5.5.23-osx10.6-x86_64.dmg
+  hdiutil attach mysql-5.5.23-osx10.6-x86_64.dmg
+  sudo installer -pkg '/Volumes/mysql-5.5.23-osx10.6-x86_64/mysql-5.5.23-osx10.6-x86_64.pkg' -target /
+  hdiutil detach /Volumes/mysql*
+}
+
 
 
 
