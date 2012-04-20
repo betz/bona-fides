@@ -11,15 +11,12 @@ What does Bona Fides install?
 - PHP 5.4.0
 - MYSQL 5.5.23
 - Drush (Latest)
-- Pear
+- Pear (Latest)
 - CGG 10.7-v2 (without using XCode)
 - Git 1.7.9.4
-- Homebrew
+- Homebrew (Latest)
 
-Only when a version is listed, i specifically chose that version. 
-Others versions may change.
 For Apache we are using the version that comes with OSX.
-
 We use a standalone GCC (osx-gcc-installer) from kennethreitz instead of needing to install the 'way too big XCode'.
 See https://github.com/kennethreitz/osx-gcc-installer
 
