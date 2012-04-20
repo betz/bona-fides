@@ -61,8 +61,16 @@ sudo ln -s /usr/local/php5/bin/php /usr/bin/php
 command -v pear >/dev/null 2>&1 || {
   echo "Installing Pear"
   curl http://pear.php.net/go-pear.phar > go-pear.phar
-  sudo php -d detect_unicode=0 go-pear.phar
-  sudo mv /Users/$USER/pear/bin/pear /usr/local/bin/
+  php -d detect_unicode=0 go-pear.phar
+  mv /Users/$USER/pear/bin/pear /usr/local/bin/
+}
+
+
+# Install Drush
+command -v drush >/dev/null 2>&1 || {
+  echo "Installing Drush"
+  pear channel-discover pear.drush.org
+  pear install drush/drush
 }
 
 

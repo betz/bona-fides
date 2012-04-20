@@ -8,16 +8,20 @@ If you have suggestions, please create an issue on Github.
 
 What does Bona Fides install?
 =============================
+- PHP 5.4.0
+- MYSQL 5.5.23
+- Drush (Latest)
+- Pear
 - CGG 10.7-v2 (without using XCode)
 - Git 1.7.9.4
 - Homebrew
-- Apache
-- PHP 5.4.0
-- Pear
-- MYSQL
 
 Only when a version is listed, i specifically chose that version. 
 Others versions may change.
+For Apache we are using the version that comes with OSX.
+
+We use a standalone GCC (osx-gcc-installer) from kennethreitz instead of needing to install the 'way too big XCode'.
+See https://github.com/kennethreitz/osx-gcc-installer
 
 PHP extensions
 ==============
@@ -100,6 +104,9 @@ available but disabled by default: apc, xslcache
 How to?
 =======
 
+Warning: This script will download a few hundred megabytes of files while executing.
+
+
 - On a fresh mac install, install git, See at following link to download the DMG. http://code.google.com/p/git-osx-installer/downloads/list
 - Open terminal.app
 - Clone the Github repo with following command: (just copy and paste in terminal and hit enter)
@@ -125,7 +132,9 @@ That's it!
 
 When asked for your password, enter your mac user password and hit enter.
 It is normal that you dont see your cursor moving when typing a password.
-Follow instructions as you see them. (it will ask to hit enter few times)
+Follow instructions as you see them. (it will ask to hit enter few times).
+
+Just tap enter when you are being asked questions ;) 
 
 Credits
 =======
