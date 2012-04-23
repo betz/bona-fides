@@ -71,7 +71,7 @@ command -v drush >/dev/null 2>&1 || {
   echo "Installing Drush"
   pear channel-discover pear.drush.org
   pear install drush/drush
-  ln -s /Users/$USER/pear/bin/drush /usr/local/bin/drush
+  mv /Users/$USER/pear/bin/drush /usr/local/bin
 }
 
 
