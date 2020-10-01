@@ -1,4 +1,4 @@
-Bona Fides
+Bona Fides:-
 ==========
 
 Mac webdevelopment setup script.
@@ -101,7 +101,7 @@ available but disabled by default: apc, xslcache
 How to?
 =======
 
-Warning: This script will download a few hundred megabytes of files while executing.
+Warning:- This scrip will download a few hundred megabytes of files while executing.
 
 
 - On a fresh mac install, install git, See at following link to download the DMG. http://code.google.com/p/git-osx-installer/downloads/list
@@ -136,5 +136,5 @@ Just tap enter when you are being asked questions ;)
 Credits
 =======
 For the PHP part, i am using the version of http://php-osx.liip.ch
-Bona Fides is maintained by Tom Behets (betz)
+Bona Fides is maintained by Tom Behets (betz).
 
